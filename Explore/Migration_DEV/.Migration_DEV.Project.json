@@ -1,0 +1,22 @@
+{
+  "objectInfo" : {
+    "id" : "7dHmxpSgydOkdEWNb2O1S9",
+    "name" : "Migration_DEV",
+    "type" : "Project",
+    "metadata" : {
+      "modelVersion" : {
+        "major" : 0,
+        "minor" : 0
+      },
+      "repoInfo" : null,
+      "contextAttributes" : [ ],
+      "additionalInfo" : {
+        "description" : "Project to hold all of the artifacts and objects  for the DA Migration project in a Development stage, prior to promotion to Pre-Production (Migration Project)",
+        "contentType" : null,
+        "documentState" : "COMPLETE"
+      }
+    }
+  },
+  "dataFileExtension" : "json",
+  "objectRefs" : [ ]
+}
