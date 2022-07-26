@@ -1,0 +1,87 @@
+{
+  "objectInfo" : {
+    "id" : "03jP4jb2iYplkHG8S9Y5Qf",
+    "name" : "m_SecurityMortgages",
+    "type" : "DTEMPLATE",
+    "metadata" : {
+      "modelVersion" : {
+        "major" : 0,
+        "minor" : 0
+      },
+      "repoInfo" : {
+        "repoHandle" : "0100001700000000003F"
+      },
+      "contextAttributes" : [ {
+        "name" : "id",
+        "value" : "@1"
+      } ],
+      "additionalInfo" : {
+        "description" : "Migration of data from AccountDetails and BorrowerAccount for Loan Accounts\n\nHistory\n----------\n2022-03-10 - MF - Added mappings   fx_MemorandumNumber to Deed_Comment   and   fx_MortgageDate  to Deed_Signed_dt\n2020-09-10 - JM - Updated OnlineAccountDetails to use ST_OnlineAccountDetails",
+        "contentType" : "JSON",
+        "documentState" : "VALID"
+      }
+    }
+  },
+  "dataFileExtension" : "zip",
+  "objectRefs" : [ {
+    "id" : "7wwQZmY0B9UeOOjzEllnGd",
+    "name" : "conn_mssql_DBISQL1201_DA_Migration_staging",
+    "type" : "Connection",
+    "metadata" : {
+      "modelVersion" : {
+        "major" : 0,
+        "minor" : 0
+      },
+      "repoInfo" : {
+        "repoHandle" : "0100000B00000000000Y"
+      },
+      "contextAttributes" : null,
+      "additionalInfo" : {
+        "description" : "Transformation Database - Staging tables in OpDataStore format containing data retained for migration.",
+        "contentType" : "JSON",
+        "documentState" : "COMPLETE"
+      }
+    },
+    "path" : "/SYS"
+  }, {
+    "id" : "19U6nGDZDKlcH2t9LmN604",
+    "name" : "conn_mssql_DBISQL1201_DA_Migration_dbo",
+    "type" : "Connection",
+    "metadata" : {
+      "modelVersion" : {
+        "major" : 0,
+        "minor" : 0
+      },
+      "repoInfo" : {
+        "repoHandle" : "0100000B00000000000Z"
+      },
+      "contextAttributes" : null,
+      "additionalInfo" : {
+        "description" : "Target database - staging tables in DA format matching the files we need to export",
+        "contentType" : "JSON",
+        "documentState" : "COMPLETE"
+      }
+    },
+    "path" : "/SYS"
+  }, {
+    "id" : "hnkdEwHdmYugqBjLmdllQu",
+    "name" : "conn_mssql_DBISQL1201_OpDataStore_ODS",
+    "type" : "Connection",
+    "metadata" : {
+      "modelVersion" : {
+        "major" : 0,
+        "minor" : 0
+      },
+      "repoInfo" : {
+        "repoHandle" : "0100000B00000000000W"
+      },
+      "contextAttributes" : null,
+      "additionalInfo" : {
+        "description" : "SQL Server - host DBISQL1201-DB OpDataStore - schema ODS",
+        "contentType" : "JSON",
+        "documentState" : "COMPLETE"
+      }
+    },
+    "path" : "/SYS"
+  } ]
+}
